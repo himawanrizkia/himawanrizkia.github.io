@@ -1,43 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tes Pertama</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        h1 {
-            color: #173b75;
-        }
-
-        button {
-            background: #173b75;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5885b3">
+  <title>A.R.H.</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>Halo, Dunia!</h1>
-    <p>This is just a drilling.</p>
+  <main class="site-panel" id="top">
+    <header class="site-header">
+      <div class="header-controls">
+        <span class="brand-mark" aria-label="Logo A.R.H." role="img">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
+            <path d="M12 3.5v17M3.5 12h17M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" />
+          </svg>
+        </span>
+        <button class="icon-button" id="shareButton" type="button" aria-label="Bagikan halaman ini" title="Bagikan halaman">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 15V3m0 0L8 7m4-4 4 4"/>
+            <path d="M6 10H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1"/>
+          </svg>
+        </button>
+      </div>
+      <div class="profile">
+        <img class="avatar" src="./assets/avatar.png" width="96" height="96" alt="Foto profil berlatar pemandangan langit dari pesawat" />
+        <h1>A.R.H.</h1>
+      </div>
+    </header>
 
-    <button onclick="sapa()">Klik Saya</button>
-
-    <script>
-        function sapa() {
-            alert("Selamat datang di website saya!");
-        }
-    </script>
+    <nav class="link-list" aria-label="Kumpulan tautan">
+      <!-- Ganti href="#" menjadi URL tujuan, misalnya href="https://contoh.com". -->
+      <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+        <span>Pedoman Akademik Ekstensi FEB UI</span><span class="card-dots" aria-hidden="true">⋮</span>
+      </a>
+      <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+        <span>Belajar Bareng Simak UI TPA</span><span class="card-dots" aria-hidden="true">⋮</span>
+      </a>
+      <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+        <span>Belajar Bareng Simak UI TBI</span><span class="card-dots" aria-hidden="true">⋮</span>
+      </a>
+      <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+        <span>Risk Management Implementation in Indonesian State Budget Fiscal Risk Disclosure (in English)</span><span class="card-dots" aria-hidden="true">⋮</span>
+      </a>
+      <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+        <span>Implementasi SFRBS dalam Analisis Risiko Keuangan Negara (dalam Bahasa Indonesia)</span><span class="card-dots" aria-hidden="true">⋮</span>
+      </a>
+      <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+        <span>Determination of Financial Feasibility of Indonesia's New Capital Road Construction Project Using Scenario Analysis (in English)</span><span class="card-dots" aria-hidden="true">⋮</span>
+      </a>
+    </nav>
+    <footer class="site-footer">A.R.H. · Kumpulan tautan</footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 </body>
 </html>
